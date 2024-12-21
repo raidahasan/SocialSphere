@@ -60,9 +60,7 @@ function loadPosts() {
     .catch(error => console.error('Error loading posts:', error));
 }
 
-// Load initial posts
 loadPosts();
 
-// Add event listener to the "Load More" button
 loadMoreBtn.addEventListener('click', loadPosts);
 
